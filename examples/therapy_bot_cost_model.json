@@ -1,0 +1,27 @@
+{
+  "product": "synthetic therapy bot",
+  "revenue_per_session": 1.2,
+  "launch": {
+    "model": "gpt-4.1",
+    "input_tokens": 8500,
+    "output_tokens": 1800,
+    "requests_per_session": 6,
+    "sessions_per_user": 8
+  },
+  "optimized": {
+    "model": "gpt-4.1-mini",
+    "input_tokens": 3200,
+    "output_tokens": 900,
+    "requests_per_session": 4,
+    "sessions_per_user": 8,
+    "cache": {
+      "reusable_input_token_share": 0.45,
+      "cache_hit_rate": 0.70,
+      "cached_input_discount": 0.50
+    },
+    "batch": {
+      "batchable_request_share": 0.25,
+      "batch_discount": 0.50
+    }
+  }
+}
